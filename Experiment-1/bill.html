@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>BTS SHOP</title>
+  <style> body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url("choco.jpeg");
+  }
+    select,input[type="text"],textarea{
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin-top: 30px;
+    margin: 0 auto;
+
+  }
+
+  .pricelist {
+    text-align: center;
+  }
+
+  .mybutton {
+    background-color: #4CAF50;
+
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+    background-color: #555555;
+    border-radius: 4px;
+  }
+
+  #entrybox {
+    width: 20%;
+    height: 43px;
+    margin-left: 5px;
+    border: 2px solid #b4b39d;
+    border-radius: 6px;
+    background-color: #c3c2ab;
+  }
+
+  .bill {
+    margin-left: 23%;
+    margin-right: 20%;
+
+  }
+
+  .bill1 {
+    margin-left: 33%;
+    margin-right: 20%;
+
+  }
+
+  #sf {
+    height: 48px;
+    border: 2px solid #b4b39d;
+    border-radius: 4px;
+  }
+
+  .bill2 {
+    margin-left: 67%;
+    position: relative;
+  }
+   .bill3 {
+    margin-left: 50%;
+    position: absolute;
+  }
+
+  .t1 tr:hover{ background-color: #c7b3b3;}
+
+ 
+    </style>
+   
+</head>
+<body>
+  <div class="pricelist">
+   <h1 style="color: rgb(254, 243, 252);font-family: cursive;">.... WELCOME TO BTS KITCHEN ....</h1>
+    <h1 style="color: rgb(254, 243, 252);font-family: cursive;">CHOCOLATES MENU</h1>
+    <table class="t1" style="background-color:beige;">
+      <tr>
+        <th>ITEMS</th>
+        <th>PRICES</th>
+      </tr>
+      <tr>
+        <td>DAIRY MILK</td>
+        <td>160 Rs</td>
+      </tr>
+      <tr>
+        <td>5 STAR</td>
+        <td>200 Rs</td>
+      </tr>
+      <tr>
+        <td>KIT-KAT</td>
+        <td>170 Rs</td>
+      </tr>
+      <tr>
+        <td>MUNCH</td>
+        <td>220 Rs</td>
+      </tr>
+      <tr>
+        <td>PERK</td>
+        <td>60 Rs</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <form class="bill1">
+    <select id="sf">
+      <option>CHOOSE</option>
+  <option selected value = "Strawberry">DAIRY MILK</option>
+  <option value = "Apple">5 STAR</option>
+  <option value = "Grapes">KIT-KAT</option>
+  <option value = "Guava">MUNCH</option>
+  <option value = "Pomegranate">PERK</option>
+</select>
+    <input type="text" id="entrybox" pattern="\d*" placeholder="Quantity">&nbsp;<b style="color: white;">Item(s)</b>&nbsp;&nbsp;
+    <input type="button" value="ADD T0 CART" class="mybutton" id="getme">
+  </form>
+  <br><br>
+  <textarea class="bill" cols="80" rows="12" id="writeme"></textarea>
+  <br>
+  <input type="submit" value="CLEAR" class="mybutton bill3" id="clr">
+  <input type="submit" value="PAY AMT" class="mybutton bill2" id="out">
+  <script src="bill.js"></script>
+  </body>
+
+</html>

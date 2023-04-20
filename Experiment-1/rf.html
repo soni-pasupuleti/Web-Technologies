@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<u><h1 align="center">Registration Form</h1></u>
+<style>
+     body{
+
+
+                background:#EBDEF0 ;
+            }
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 40%;
+              background:#BB8FCE;
+            }
+            
+            td, th {
+              padding: 8px;
+
+            }
+            table.center {
+            margin-left: auto; 
+            margin-right: auto;
+            }
+            form.hover{
+                border-color: black;
+
+            }
+</style>
+</head>
+<body>
+<form>
+	<table align="center" class="h">
+        <tr>
+            <td>Name:
+            </td>
+            <td>
+                <input type="text" placeholder="Name" name="" required>
+            </td>
+        </tr>
+		<tr>
+			<td>
+				Email Address:
+			</td>
+			<td>
+				<input type=”mail”  placeholder=”Email” name=”” required>
+			</td>
+		</tr>
+        <tr>
+            <td>Gender:</td>
+        <td><input type="radio" id="gen" name="gen" value="Female"><label for="gen">Female</label>
+            <input type="radio" id="gen" name="gen" value="Male"><label for="gen">Male</label>
+            <input type="radio" id="gen" name="gen" value="Other"><label for="gen">Other</label>
+            </tr>
+            <tr>
+				<td class=p1><label for="religion">Religion:</label></td>
+				<td><select name="rel" required>
+					<option value="hin">Hindu</option>
+					<option value="mus">Muslim</option>
+					<option value="christ">Christian</option></select></td>
+				</tr>
+			<tr>
+				<td><label for="dob">DOB:</label></td>
+				<td><input type="date" name="dob" required></td>
+			</tr>
+			<tr>
+				<td><label for="language">Languages:</label></td>
+				<td><input type="checkbox" name="language" id="language">Telugu
+				<input type="checkbox" name="language" id="language">Hindi
+				<input type="checkbox" name="language" id="language">English</td>
+			</tr>
+			<tr>
+				<td><label for="addres">Address:</label></td>
+				<td><textarea rows=5 col=5 placeholder="address is"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="password">Password:</label></td>
+				<td><input type="password" name="password" id="password" placeholder="enter password" required></td>
+			</tr>
+			<tr>
+				<td><label for="password">confirm Password:</label></td>
+				<td><input type="password" name="password" id="password" placeholder="confirm your password" required></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="sub" value="submit"></td>
+				<td><input type="reset" name="reset" value="reset"></td>
+			</tr>
+		</tr>
+	</table>
+    
+</form> 
+</body>
+</html>

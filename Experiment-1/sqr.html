@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#player{
+position:absolute;
+top:0px;
+left:0px;
+width:30px;
+height:30px;
+background-color:red;
+}
+#score{
+position:absolute;
+top:0px;
+right:10px;
+font-size:20px;
+}
+#coord{
+position:absolute;
+top:10px;
+right:100px;
+}
+</style>
+</head>
+<body>
+<div id="player"></div>
+<div id="score"></div>
+<div id="coord"></div>
+<script>
+var playerElem=document.getElementById("player");
+var scoreElem=document.getElementById("score");
+var coordElem=document.getElementById("coord");
+var score=0;
+var position={x:0,y:0}
+document.addEventListener("keydown",function(event)
+{
+if(event.key=="ArrowUp")
+{
+position.y -=10;
+}
+if(event.key=="ArrowDown")
+{
+position.y +=10;
+}
+if(event.key=="ArrowLeft")
+{
+position.x -=10;
+}
+if(event.key=="ArrowRight")
+{
+position.x +=10;
+}
+playerElem.style.top=position.y+"px";
+playerElem.style.left=position.x+"px";
+coordElem.innerHTML=position.x+","+position.y;
+if(position.x===250 | position.y===250)
+{
+score +=10;
+scoreElem.innerHTML="score:"+score;
+}
+});
+function genRand()
+{
+n1=math.random(1280);
+n2=math.random(1280);
+return {x1:n1,y1:n1}
+}
+res=genRand();
+</script>
+</body>
+</html>
